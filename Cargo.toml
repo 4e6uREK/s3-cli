@@ -1,5 +1,5 @@
 [package]
-name = "s3-cli"
+name = "true-s3-cli"
 version = "0.1.0"
 edition = "2021"
 
@@ -18,3 +18,10 @@ rusoto_credential = "0.48.0"
 [profile.release]
 lto = true
 panic = "abort"
+
+[package]
+readme = "README.md"
+description = "S3 CLI implementation"
+repository = "https://github.com/4e6uREK/s3-cli"
+homepage = "https://github.com/4e6uREK/s3-cli"
+license = "GPL-3.0-or-later"

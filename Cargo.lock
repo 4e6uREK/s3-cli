@@ -1043,22 +1043,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f3cb5ba0dc43242ce17de99c180e96db90b235b8a9fdc9543c96d2209116bd9f"
 
 [[package]]
-name = "s3-cli"
-version = "0.1.0"
-dependencies = [
- "clap",
- "home",
- "rusoto_core",
- "rusoto_credential",
- "rusoto_s3",
- "serde",
- "serde_ini",
- "serde_json",
- "tar",
- "tokio",
-]
-
-[[package]]
 name = "schannel"
 version = "0.1.24"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1340,6 +1324,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c06d3da6113f116aaee68e4d601191614c9053067f9ab7f6edbcb161237daa54"
 dependencies = [
  "once_cell",
+]
+
+[[package]]
+name = "true-s3-cli"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "home",
+ "rusoto_core",
+ "rusoto_credential",
+ "rusoto_s3",
+ "serde",
+ "serde_ini",
+ "serde_json",
+ "tar",
+ "tokio",
 ]
 
 [[package]]

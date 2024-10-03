@@ -1328,7 +1328,7 @@ dependencies = [
 
 [[package]]
 name = "true-s3-cli"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "clap",
  "home",

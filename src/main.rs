@@ -58,7 +58,7 @@ async fn send_file(cfg: &Config, file: &str) -> Result<String, Box<dyn Error>> {
     let filepath = Path::new(file).file_name().unwrap().to_str().unwrap();
 
     let req = PutObjectRequest {
-        bucket: "proxima-torrents".to_string(),
+        bucket: cfg.bucket.clone(),
         key: filepath.to_string(),
         body: Some(data.into()),
         ..Default::default()

@@ -41,9 +41,6 @@ struct Cli {
 
     #[arg(short, long, default_value = "false")]
     list: bool,
-
-    #[arg(long, default_value = "5")]
-    compression: i32,
 }
 
 async fn send_file(cfg: &Config, file: &str) -> Result<String, Box<dyn Error>> {

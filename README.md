@@ -23,25 +23,25 @@ bucket=test
 
 1. Get file
 ```sh
-s3-cli -r <filename>
+true-s3-cli -r <filename>
 ```
 
 2. Put file
 ```sh
-s3-cli -s <filename>
+true-s3-cli -s <filename>
 ```
 
 3. Dump bucket
 ```sh
-s3-cli -d
+true-s3-cli -d
 ```
 
 4. Restore bucket
 ```
-s3-cli -p <archive.tar>
+true-s3-cli -p <archive.tar>
 ```
 
 5. List files
 ```sh
-s3-cli -l
+true-s3-cli -l
 ```

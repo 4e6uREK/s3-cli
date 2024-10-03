@@ -261,13 +261,13 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     if let Some(send) = args.send {
         for file in send {
-            send_file(&config, &file).await?;
+            println!("{}", send_file(&config, &file).await?);
         }
     }
 
     if let Some(recv) = args.recv {
         for file in recv {
-            recv_file(&config, &file).await?;
+            println!("{}", recv_file(&config, &file).await?);
         }
     }
 
